@@ -12,42 +12,39 @@
  * and open the template in the editor.
  */
 package Exercise03;
+
 import java.util.Scanner;
+
 /**
  *
- * @author Name:Khushbu Oza
- *         Id: 20CS041
- *         Exercise03_27
+ * @author Name:Khushbu Oza Id: 20CS041 Exercise03_27
  */
 public class Exercise03_27 {
-    public static void main(String[] args) {
-        //Create a scaner object
-        Scanner input = new Scanner(System.in);
-        //Prompt the user to enter x coordinate
-        System.out.println("Enter the x coordinate:");
-        double x = input.nextDouble();
-        //Promt the user to enter y coordinate
-        System.out.println("Enter the y coordinate:");
-        double y = input.nextDouble();
-        boolean pointInside = true;
-        //Check whether the x-coordinate is within the rectangular box
-        if(x > 200 || x < 0)
-        pointInside = false;
-        if(pointInside){
-        //Check whether the y-coordinate is within the rectangular box
-        if(y > 100 || y < 0)
-        pointInside = false;
-        // ((x2-x1)*(y-y1))-((x-x2)*(y2-y1))
-        double determinant=((200-0)*(y-100))-((x-0)*(0-100));
-        if(determinant>0)
-        pointInside = false;
-        }
-        if(pointInside)
-        System.out.println("The point is in the triangle.");
-        else
-        System.out.println("The point is not in the triangle.");
-        }
+	public static void main(String[] args) {
+		// Create a scaner object
+		Scanner input = new Scanner(System.in);
+		// Prompt the user to enter x coordinate
+		System.out.println("Enter the x coordinate:");
+		double x = input.nextDouble();
+		// Prompt the user to enter y coordinate
+		System.out.println("Enter the y coordinate:");
+		double y = input.nextDouble();
+		boolean pointInside = true;
+		// Check whether the x-coordinate is within the rectangular box
+		if (x > 200 || x < 0)
+			pointInside = false;
+		if (pointInside) {
+			// Check whether the y-coordinate is within the rectangular box
+			if (y > 100 || y < 0)
+				pointInside = false;
+			// ((x2-x1)*(y-y1))-((x-x2)*(y2-y1))
+			double determinant = ((200 - 0) * (y - 100)) - ((x - 0) * (0 - 100));
+			if (determinant > 0)
+				pointInside = false;
+		}
+		if (pointInside)
+			System.out.println("The point is in the triangle.");
+		else
+			System.out.println("The point is not in the triangle.");
+	}
 }
-    
-   
-

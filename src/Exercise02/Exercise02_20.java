@@ -17,16 +17,16 @@ Write a program that reads the balance and the annual percentage interest rate a
 displays the interest for the next month. Here is a sample run:
 */
 public class Exercise02_20 {
-    public static void main(String[] args) {
-        double balance, annualIntrestRate, interest;// defining variables balance annualIntrestRate,Interest as double
-        Scanner input = new Scanner(System.in);// creatinf instance of Scanner class for taking input
-        System.out.print("Enter balance and interest rate:  ");// telling user to enter the balance and
-                                                               // annualIntrestRate
-        balance = input.nextDouble();// Storing the input of balance
-        annualIntrestRate = input.nextDouble();// Storing the input of annualIntrestRate
-        interest = balance * (annualIntrestRate / 1200);// calculating the interest
-        System.out.println("The interest is " + interest);// Dispalying the finbal total Interest
+	public static void main(String[] args) {
+		double balance, annualIntrestRate, interest;// defining variables balance annualIntrestRate,Interest as double
+		Scanner input = new Scanner(System.in);// creatinf instance of Scanner class for taking input
+		System.out.print("Enter balance and interest rate:  ");// telling user to enter the balance and
+																// annualIntrestRate
+		balance = input.nextDouble();// Storing the input of balance
+		annualIntrestRate = input.nextDouble();// Storing the input of annualIntrestRate
+		interest = balance * (annualIntrestRate / 1200);// calculating the interest
+		System.out.println("The interest is " + interest);// Dispalying the finbal total Interest
 
-    }
+	}
 
 }

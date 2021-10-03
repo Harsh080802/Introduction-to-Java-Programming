@@ -18,14 +18,14 @@ series from left to right and from right to left with n = 50000
 public class Exercise04_23 {
     public static void main(String[] args) {
 
-        double n = 50000, sum = 0, temp, i;// defining variables n,sum,temp,i as double
-        for (i = 0; i <= n; i++)// for loop starts
+        double n = 50000, sum = 1, temp, i;// defining variables n,sum,temp,i as double
+        for (i = 1; i <= n; i++)// for loop starts
         {
             temp = 1 / (i + 1);// using temp variable defining the sequence of the series amd storing the value
                                // of it
             sum += temp;// using the value of temp from above and adding it to sum
 
-        } // fro loop ends
+        } // for loop ends
         System.out.println("The sum is: " + sum);// displaying the total sum of the sequence
     }
 

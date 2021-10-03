@@ -1,6 +1,16 @@
+
+/**
+ * 
+ *
+ * @author Krish Pandya (D21CS109) 
+ *
+ */
+
+package Exercise04;
+
 import java.util.Scanner;
 
-public class Exercise_04_46 {
+public class Exercise04_46 {
     //taking input 
 	public static Scanner sc = new Scanner(System.in);
 

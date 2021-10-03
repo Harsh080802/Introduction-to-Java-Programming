@@ -4,7 +4,7 @@ package Exercise04;
 *In the Exercise04_05, we convert Kilograms to Pounds & Pounds to Kilograms using for loop
 *Kilograms=i & Pounds=j so, i=j*0.453 & j=i*2.2 using this formula we get our answer
 */
-public class Exercise_04_05 {
+public class Exercise04_05 {
 
 public static void main(String[] args)
 {

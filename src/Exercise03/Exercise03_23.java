@@ -14,38 +14,27 @@
 package Exercise03;
 
 import java.util.Scanner;
-public class Exercise03_23 
-{
-        public static void main(String []args)
-        {   
-            // use of scanner class to take input
-            Scanner input = new Scanner(System.in);
-            System.out.print("Enter a point (x,y): ");
 
-            // declaration of variables
-            float x,y;
+public class Exercise03_23 {
+	public static void main(String[] args) {
+		// use of scanner class to take input
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a point (x,y): ");
 
-            // initialization of variables
-            x=input.nextFloat();
-            y=input.nextFloat();
+		// declaration of variables
+		float x, y;
 
-            //loop to check whether or not the given point is inside the rectangle
-            if(x < 10/2)
-            {
-                if(y < 5.0/2)
-                {
-                    System.out.println("The given point is inside the rectangle.");
-                }
-                
-                else
-                {
-                    System.out.println("The given point is not inside the rectangle.");
-                }
-            }
+		// initialization of variables
+		x = input.nextFloat();
+		y = input.nextFloat();
 
-            else
-            {
-                System.out.println("The given point is not inside the rectangle.");
-            }
-        }
+		// loop to check whether or not the given point is inside the rectangle
+		if (x < 10 / 2 && y < 5.0 / 2) {
+			System.out.println("The given point is inside the rectangle.");
+		}
+
+		else {
+			System.out.println("The given point is not inside the rectangle.");
+		}
+	}
 }

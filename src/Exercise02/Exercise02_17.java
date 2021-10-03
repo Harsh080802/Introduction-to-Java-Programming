@@ -19,29 +19,32 @@
  * and open the template in the editor.
  */
 package Exercise02;
+
 import java.util.Scanner;
+
 /**
  *
  * @author 20CS041_Khushbu
  */
 public class Exercise02_17 {
-    public static void main(String[] args){
-        //Create a scaner object
-        Scanner input = new Scanner(System.in);
-        //Prompt the user to enter temperature and wind speed
-        System.out.println("Please enter the fahrenheit temperature between -58F and 41F and enter the wind speed greater then or equal to 2 miles per hour.");
-        System.out.println("Enter the temperature in Fahrenheit:");
-        double fahrenheit = input.nextDouble();
-        System.out.println("Enter the wind speed in miles per hour:");
-        double windSpeed = input.nextDouble();
-        //Check the condition whether the fahrenheit temperature is in the range
-        if(fahrenheit>=-58 && fahrenheit<=41 && windSpeed >=2){
-        //Calculate the wind chill index.    
-        double index = 35.74 + 0.6215 * fahrenheit - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * fahrenheit * Math.pow(windSpeed, 0.16);
-        System.out.println("The wind chill index is " +index);
-        }
-        else{
-        System.out.println("Please enter valid temperature and wind speed.");
-        }
-        }
+	public static void main(String[] args) {
+		// Create a scaner object
+		Scanner input = new Scanner(System.in);
+		// Prompt the user to enter temperature and wind speed
+		System.out.println(
+				"Please enter the fahrenheit temperature between -58F and 41F and enter the wind speed greater then or equal to 2 miles per hour.");
+		System.out.println("Enter the temperature in Fahrenheit:");
+		double fahrenheit = input.nextDouble();
+		System.out.println("Enter the wind speed in miles per hour:");
+		double windSpeed = input.nextDouble();
+		// Check the condition whether the fahrenheit temperature is in the range
+		if (fahrenheit >= -58 && fahrenheit <= 41 && windSpeed >= 2) {
+			// Calculate the wind chill index.
+			double index = 35.74 + 0.6215 * fahrenheit - 35.75 * Math.pow(windSpeed, 0.16)
+					+ 0.4275 * fahrenheit * Math.pow(windSpeed, 0.16);
+			System.out.println("The wind chill index is " + index);
+		} else {
+			System.out.println("Please enter valid temperature and wind speed.");
+		}
+	}
 }

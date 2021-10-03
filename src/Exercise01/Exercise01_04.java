@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javapracticals;
+
+package Exercise01;
 
 /*
 Vrushabh Amrutiya 20CS004
@@ -18,11 +19,14 @@ a a^2 a^3
  *
  * @author vrush
  */
+
 public class Exercise01_04 {
     public static void main(String[] args) {
+
+        // Printing the desired output table
         System.out.println(" a     a^2     a^3");
         System.out.println(" 1     1       1");
-        System.out.println(" 2     2       8");
+        System.out.println(" 2     4       8");
         System.out.println(" 3     9       27");
         System.out.println(" 4     16      64");
     }
